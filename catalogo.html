@@ -1,10 +1,12 @@
-<!DOCTYPE html><html class="dark"><head>
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Be+Vietnam+Pro:wght@100;300;400;500;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Be+Vietnam+Pro:wght@100;300;400;500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="style.css">
+  <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
@@ -58,317 +60,194 @@
             "inverse-surface": "#e5e2e1",
             "tertiary-fixed": "#e1e2e9"
           },
-          "borderRadius": {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
           "spacing": {
             "margin": "48px",
-            "container-max": "1440px",
-            "unit": "8px",
             "gutter": "24px"
-          },
-          "fontFamily": {
-            "body-md": ["Be Vietnam Pro"],
-            "label-sm": ["Space Grotesk"],
-            "body-lg": ["Be Vietnam Pro"],
-            "headline-md": ["Space Grotesk"],
-            "display-xl": ["Space Grotesk"],
-            "headline-lg": ["Space Grotesk"]
-          },
-          "fontSize": {
-            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-            "label-sm": ["12px", {"lineHeight": "1.0", "fontWeight": "700"}],
-            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-            "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "0.02em", "fontWeight": "600"}],
-            "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-            "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}]
           }
         },
       },
     }
   </script>
-<style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
-    .machined-plate {
-      background: linear-gradient(145deg, #2a2a2a, #131313);
-      box-shadow: inset 1px 1px 0px rgba(255,255,255,0.05), 4px 4px 0px 0px rgba(0,0,0,1);
-    }
-    .metal-button {
-      background: linear-gradient(to bottom, #9e0000, #410000);
-      box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2), 0px 4px 0px #200000;
-    }
-    .metal-button:active {
-      transform: translateY(2px);
-      box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1), 0px 1px 0px #200000;
-    }
-    .etched-input {
-      box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .heavy-frame {
-      border: 1px solid #44474c;
-      position: relative;
-    }
-    .heavy-frame::before {
-      content: '';
-      position: absolute;
-      top: -1px; left: -1px;
-      width: 10px; height: 10px;
-      border-top: 2px solid #9e0000;
-      border-left: 2px solid #9e0000;
-    }
-    .heavy-frame::after {
-      content: '';
-      position: absolute;
-      bottom: -1px; right: -1px;
-      width: 10px; height: 10px;
-      border-bottom: 2px solid #9e0000;
-      border-right: 2px solid #9e0000;
-    }
-  </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.inset-y-0{top:0px;bottom:0px}.left-0{left:0px}.right-2{right:0.5rem}.top-0{top:0px}.top-2{top:0.5rem}.z-50{z-index:50}.z-\[60\]{z-index:60}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-auto{margin-left:auto}.mt-20{margin-top:5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1 / 1}.h-10{height:2.5rem}.h-12{height:3rem}.h-8{height:2rem}.h-full{height:100%}.h-px{height:1px}.min-h-\[884px\]{min-height:884px}.w-1\/2{width:50%}.w-1\/3{width:33.333333%}.w-1\/4{width:25%}.w-12{width:3rem}.w-2\/3{width:66.666667%}.w-8{width:2rem}.w-80{width:20rem}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-screen-2xl{max-width:1536px}.flex-1{flex:1 1 0%}.-translate-x-full{--tw-translate-x:-100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-crosshair{cursor:crosshair}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-gutter{gap:24px}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-neutral-800 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(38 38 38 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-r-4{border-right-width:4px}.border-t-2{border-top-width:2px}.border-t-4{border-top-width:4px}.border-none{border-style:none}.border-neutral-700{--tw-border-opacity:1;border-color:rgb(64 64 64 / var(--tw-border-opacity, 1))}.border-neutral-800{--tw-border-opacity:1;border-color:rgb(38 38 38 / var(--tw-border-opacity, 1))}.border-red-600{--tw-border-opacity:1;border-color:rgb(220 38 38 / var(--tw-border-opacity, 1))}.border-red-900{--tw-border-opacity:1;border-color:rgb(127 29 29 / var(--tw-border-opacity, 1))}.border-red-900\/30{border-color:rgb(127 29 29 / 0.3)}.border-secondary\/30{border-color:rgb(233 193 118 / 0.3)}.bg-background{--tw-bg-opacity:1;background-color:rgb(19 19 19 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-neutral-800{--tw-bg-opacity:1;background-color:rgb(38 38 38 / var(--tw-bg-opacity, 1))}.bg-neutral-900{--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.bg-neutral-950{--tw-bg-opacity:1;background-color:rgb(10 10 10 / var(--tw-bg-opacity, 1))}.bg-red-900\/30{background-color:rgb(127 29 29 / 0.3)}.bg-red-950\/20{background-color:rgb(69 10 10 / 0.2)}.bg-red-950\/30{background-color:rgb(69 10 10 / 0.3)}.bg-secondary\/10{background-color:rgb(233 193 118 / 0.1)}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(28 27 27 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-1{padding-bottom:0.25rem}.pb-24{padding-bottom:6rem}.pt-20{padding-top:5rem}.pt-32{padding-top:8rem}.font-\[\'Space_Grotesk\'\]{font-family:'Space Grotesk'}.font-body-md{font-family:Be Vietnam Pro}.font-headline-lg{font-family:Space Grotesk}.font-headline-md{font-family:Space Grotesk}.text-\[10px\]{font-size:10px}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.leading-tight{line-height:1.25}.tracking-tighter{letter-spacing:-0.05em}.tracking-widest{letter-spacing:0.1em}.text-neutral-400{--tw-text-opacity:1;color:rgb(163 163 163 / var(--tw-text-opacity, 1))}.text-neutral-500{--tw-text-opacity:1;color:rgb(115 115 115 / var(--tw-text-opacity, 1))}.text-neutral-600{--tw-text-opacity:1;color:rgb(82 82 82 / var(--tw-text-opacity, 1))}.text-on-background{--tw-text-opacity:1;color:rgb(229 226 225 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(229 226 225 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(228 190 184 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-secondary{--tw-text-opacity:1;color:rgb(233 193 118 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-80{opacity:0.8}.shadow-\[0_-4px_10px_rgba\(0\2c 0\2c 0\2c 0\.8\)\]{--tw-shadow:0 -4px 10px rgba(0,0,0,0.8);--tw-shadow-colored:0 -4px 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_4px_0_0_rgba\(0\2c 0\2c 0\2c 1\)\]{--tw-shadow:0 4px 0 0 rgba(0,0,0,1);--tw-shadow-colored:0 4px 0 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[8px_0_0_0_rgba\(0\2c 0\2c 0\2c 0\.5\)\]{--tw-shadow:8px 0 0 0 rgba(0,0,0,0.5);--tw-shadow-colored:8px 0 0 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.brightness-75{--tw-brightness:brightness(.75);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_0_8px_rgba\(158\2c 0\2c 0\2c 0\.5\)\]{--tw-drop-shadow:drop-shadow(0 0 8px rgba(158,0,0,0.5));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.placeholder\:text-neutral-600::placeholder{--tw-text-opacity:1;color:rgb(82 82 82 / var(--tw-text-opacity, 1))}.hover\:border-red-600:hover{--tw-border-opacity:1;border-color:rgb(220 38 38 / var(--tw-border-opacity, 1))}.hover\:bg-neutral-800:hover{--tw-bg-opacity:1;background-color:rgb(38 38 38 / var(--tw-bg-opacity, 1))}.hover\:bg-red-800:hover{--tw-bg-opacity:1;background-color:rgb(153 27 27 / var(--tw-bg-opacity, 1))}.hover\:tracking-\[0\.2em\]:hover{letter-spacing:0.2em}.hover\:text-neutral-100:hover{--tw-text-opacity:1;color:rgb(245 245 245 / var(--tw-text-opacity, 1))}.hover\:text-red-400:hover{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.hover\:text-red-600:hover{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:brightness-100:hover{--tw-brightness:brightness(1);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\:drop-shadow-\[0_0_12px_rgba\(158\2c 0\2c 0\2c 0\.6\)\]:hover{--tw-drop-shadow:drop-shadow(0 0 12px rgba(158,0,0,0.6));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\:drop-shadow-\[0_0_8px_rgba\(158\2c 0\2c 0\2c 0\.8\)\]:hover{--tw-drop-shadow:drop-shadow(0 0 8px rgba(158,0,0,0.8));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\:border-red-600:focus{--tw-border-opacity:1;border-color:rgb(220 38 38 / var(--tw-border-opacity, 1))}.focus\:ring-0:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-red-900:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(127 29 29 / var(--tw-ring-opacity, 1))}.active\:translate-y-1:active{--tw-translate-y:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.dark\:bg-black:is(.dark *){--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.dark\:bg-neutral-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(10 10 10 / var(--tw-bg-opacity, 1))}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 768px){.md\:flex{display:flex}.md\:h-12{height:3rem}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}}@media (min-width: 1024px){.lg\:ml-80{margin-left:20rem}.lg\:translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}}@media (min-width: 1280px){.xl\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1536px){.\32xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
-<body class="bg-background text-on-background font-body-md min-h-[884px]" data-stitch-vh="min-h-[884px]===min-h-screen" data-mode="connect">
-<!-- TopAppBar -->
-<nav class="fixed top-0 w-full border-b-2 border-neutral-800 z-50 bg-neutral-950 dark:bg-black shadow-[0_4px_0_0_rgba(0,0,0,1)]">
-<div class="flex justify-between items-center w-full px-12 py-4 max-w-screen-2xl mx-auto">
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-red-700 cursor-pointer hover:drop-shadow-[0_0_8px_rgba(158,0,0,0.8)] active:translate-y-1 transition-all" data-icon="menu">menu</span>
-<img alt="COR-MAG 3D" class="h-10 md:h-12 w-auto object-contain filter drop-shadow-[0_0_8px_rgba(158,0,0,0.5)]" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9">
-</div>
-<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] font-bold uppercase tracking-widest text-xs">
-<a class="text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Home</a>
-<a class="text-red-600 border-b-2 border-red-600 pb-1" href="#">Catalog</a>
-<a class="text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Commission</a>
-<a class="text-neutral-400 hover:text-neutral-100 transition-colors" href="#">Intel</a>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-red-700 cursor-pointer hover:drop-shadow-[0_0_8px_rgba(158,0,0,0.8)] active:translate-y-1 transition-all" data-icon="shopping_cart">shopping_cart</span>
-</div>
-</div>
-</nav>
-<!-- Side Navigation Drawer (Contextual) -->
-<aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-80 border-r-4 border-neutral-800 bg-neutral-900 dark:bg-neutral-950 divide-y divide-neutral-800 shadow-[8px_0_0_0_rgba(0,0,0,0.5)] transform -translate-x-full lg:translate-x-0 transition-transform pt-20">
-<div class="px-6 py-8">
-<h2 class="font-['Space_Grotesk'] font-bold uppercase text-red-700 text-xl tracking-tighter">COMMAND CONSOLE</h2>
-</div>
-<nav class="flex-1 flex flex-col font-['Space_Grotesk'] font-bold uppercase">
-<a class="text-neutral-500 px-6 py-4 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95" href="#">
-<span class="material-symbols-outlined" data-icon="home">home</span> Home
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full border-b-2 border-neutral-800 z-50 bg-black/90 backdrop-blur-md shadow-2xl">
+    <div class="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
+      <div class="flex items-center gap-4">
+        <!-- Sidebar Toggle (Desktop and Mobile) -->
+        <label for="sidebar-toggle" class="cursor-pointer">
+          <span class="material-symbols-outlined text-red-700 text-3xl">menu</span>
+        </label>
+        <input type="checkbox" id="sidebar-toggle" class="hidden peer/sidebar">
+        
+        <a href="index.html">
+          <img alt="COR-MAG 3D" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9">
+        </a>
+      </div>
+      
+      <nav class="hidden md:flex gap-10">
+        <a class="nav-link nav-link-inactive" href="index.html">Home</a>
+        <a class="nav-link nav-link-active" href="catalogo.html">Catalog</a>
+        <a class="nav-link nav-link-inactive" href="#">Commission</a>
+        <a class="nav-link nav-link-inactive" href="#">Intel</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined text-red-700 text-3xl cursor-pointer">shopping_cart</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Side Navigation Drawer -->
+  <aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-80 border-r-4 border-neutral-800 bg-neutral-900 shadow-2xl transition-transform -translate-x-full peer-checked/sidebar:translate-x-0 pt-20">
+    <div class="px-6 py-8 flex justify-between items-center">
+      <h2 class="font-['Space_Grotesk'] font-bold uppercase text-red-700 text-xl tracking-tighter">COMMAND CONSOLE</h2>
+      <label for="sidebar-toggle" class="cursor-pointer lg:hidden">
+        <span class="material-symbols-outlined text-neutral-500">close</span>
+      </label>
+    </div>
+    <nav class="flex-1 flex flex-col font-['Space_Grotesk'] font-bold uppercase overflow-y-auto">
+      <a class="text-neutral-500 px-6 py-5 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="index.html">
+        <span class="material-symbols-outlined">home</span> Home
       </a>
-<a class="bg-red-950/20 text-red-500 border-l-4 border-red-600 px-6 py-4 flex items-center gap-4 active:scale-95" href="#">
-<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span> Catalog
+      <a class="bg-red-950/20 text-red-500 border-l-4 border-red-600 px-6 py-5 flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="catalogo.html">
+        <span class="material-symbols-outlined">grid_view</span> Catalog
       </a>
-<a class="text-neutral-500 px-6 py-4 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95" href="#">
-<span class="material-symbols-outlined" data-icon="brush">brush</span> Commission
+      <a class="text-neutral-500 px-6 py-5 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="#">
+        <span class="material-symbols-outlined">brush</span> Commission
       </a>
-<a class="text-neutral-500 px-6 py-4 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95" href="#">
-<span class="material-symbols-outlined" data-icon="help">help</span> Intel
+      <a class="text-neutral-500 px-6 py-5 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="#">
+        <span class="material-symbols-outlined">help</span> Intel
       </a>
-</nav>
-</aside>
-<!-- Main Content Canvas -->
-<main class="lg:ml-80 pt-32 px-12 pb-24 max-w-screen-2xl mx-auto">
-<!-- Header Section -->
-<header class="mb-12">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-<div class="">
-<h1 class="font-headline-lg text-on-surface uppercase tracking-widest mb-2">Miniature Catalog</h1>
-<p class="text-on-surface-variant font-body-md max-w-2xl">High-fidelity 3D resin prints for wargaming. From frontline infantry to ancient titans, forged for eternal conflict.</p>
-</div>
-<div class="flex items-center gap-4">
-<div class="bg-surface-container-low border border-neutral-700 px-4 py-2 flex items-center gap-3 machined-plate">
-<span class="material-symbols-outlined text-sm text-neutral-500" data-icon="search">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-xs font-['Space_Grotesk'] text-on-surface placeholder:text-neutral-600 uppercase" placeholder="SEARCH ASSETS..." type="text">
-</div>
-</div>
-</div>
-</header>
-<!-- Filters Row -->
-<section class="mb-12 flex flex-wrap items-center gap-6 p-6 machined-plate border border-neutral-800">
-<div class="flex flex-col gap-2">
-<span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Faction Registry</span>
-<select class="bg-neutral-900 border border-neutral-700 text-xs font-['Space_Grotesk'] uppercase px-4 py-2 etched-input focus:border-red-600 focus:ring-red-900">
-<option>All Factions</option>
-<option>Space Marines</option>
-<option>Chaos Legions</option>
-<option>Xenos Threat</option>
-<option>Ork Hordes</option>
-</select>
-</div>
-<div class="flex flex-col gap-2">
-<span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Unit Classification</span>
-<select class="bg-neutral-900 border border-neutral-700 text-xs font-['Space_Grotesk'] uppercase px-4 py-2 etched-input focus:border-red-600 focus:ring-red-900">
-<option>Troops</option>
-<option>Elites</option>
-<option>Heavy Support</option>
-<option>HQ</option>
-</select>
-</div>
-<div class="flex flex-col gap-2">
-<span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Logistics</span>
-<div class="flex gap-2">
-<button class="px-4 py-2 border border-red-900 text-[10px] font-bold uppercase bg-red-950/30 text-red-500 hover:bg-red-800 hover:text-white transition-all">In Stock</button>
-<button class="px-4 py-2 border border-neutral-800 text-[10px] font-bold uppercase hover:bg-neutral-800 transition-all text-neutral-500">Backorder</button>
-</div>
-</div>
-<div class="ml-auto">
-<span class="text-xs font-['Space_Grotesk'] text-neutral-500 uppercase">Displaying: 48 units</span>
-</div>
-</section>
-<!-- Product Grid -->
-<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-gutter">
-<!-- Card 1 -->
-<article class="machined-plate border border-neutral-800 group">
-<div class="p-4">
-<div class="heavy-frame bg-black aspect-square overflow-hidden mb-4">
-<img alt="Space Marine Miniature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" data-alt="extreme close-up of a highly detailed futuristic soldier miniature with weathered metallic blue armor and red glowing eyes, dark cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFgvSuSVoL8n6mBUSeLRdJPmmuOXxTcrrOaxJfL1MlANhv8pNzS3g2KK6jqz_Pc8ShW0fFwwE21w5OsTh-hn6rNDHP0_IkuWwXMHucayrytKSbeOEc6bJOgYH-K6_p1OVIWpNSpWA90UlGqQxhpUEcWdpTZ6Si8H1VQDXZ3WD0YN9V5I8SebfXQ3ITu2dbi0W4rj2T5cFjiRmiG4h6hqWg1a_QMBHTsDiNwo_K7kVqL3cXXE9fAmvNANu9L8uE0l7xBvHJ5wIVbKI">
-<div class="absolute top-2 right-2 flex flex-col gap-1 items-end">
-<span class="bg-secondary/10 text-secondary border border-secondary/30 px-2 py-0.5 text-[10px] font-bold uppercase tracking-tighter">Gold Tier</span>
-</div>
-</div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-sm uppercase text-on-surface leading-tight">Intercessor Prime X-04</h3>
-<span class="text-red-500 font-['Space_Grotesk'] font-bold">$34.99</span>
-</div>
-<p class="text-[10px] text-neutral-500 uppercase tracking-widest mb-6">Faction: Space Marines</p>
-<div class="h-px bg-neutral-800 mb-6 relative">
-<div class="absolute inset-0 bg-red-900/30 w-1/3"></div>
-</div>
-<button class="w-full metal-button py-3 text-xs font-['Space_Grotesk'] font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_12px_rgba(158,0,0,0.6)] transition-all">
+      <!-- Faction Filters in Sidebar -->
+      <div class="mt-8 px-6">
+        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest block mb-4">Faction Registry</span>
+        <div class="flex flex-col gap-2">
+           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Space Marines</button>
+           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Chaos Legions</button>
+           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Xenos Threat</button>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="transition-all duration-300 pt-32 px-6 md:px-12 pb-24 max-w-screen-2xl mx-auto min-h-screen relative">
+    <!-- Watermark Background -->
+    <div class="fixed inset-0 z-[-1] pointer-events-none opacity-5 flex items-center justify-center">
+       <img src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9" 
+            class="w-full md:w-1/2 grayscale invert" alt="Watermark">
+    </div>
+
+    <!-- Header Section -->
+    <header class="mb-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div>
+          <h1 class="text-4xl md:text-6xl font-headline-lg text-on-surface uppercase tracking-widest mb-4">Registry</h1>
+          <p class="text-on-surface-variant font-body-md max-w-2xl text-lg">High-fidelity 3D resin prints for wargaming. Forged for eternal conflict.</p>
+        </div>
+        <div class="w-full md:w-auto">
+          <div class="machined-plate bg-surface-container-low border border-neutral-700 px-6 py-3 flex items-center gap-4">
+            <span class="material-symbols-outlined text-neutral-500">search</span>
+            <input class="bg-transparent border-none focus:ring-0 text-sm font-['Space_Grotesk'] text-on-surface placeholder:text-neutral-600 uppercase w-full" placeholder="SEARCH ASSETS..." type="text">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Filters Row -->
+    <section class="mb-12 flex flex-wrap items-center gap-8 p-8 stone-slab">
+      <div class="flex flex-col gap-3 min-w-[200px]">
+        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Faction</span>
+        <select class="bg-neutral-900 border border-neutral-700 text-xs font-['Space_Grotesk'] uppercase px-4 py-3 focus:border-red-600 focus:ring-1 focus:ring-red-900 outline-none">
+          <option>All Factions</option>
+          <option>Space Marines</option>
+          <option>Chaos Legions</option>
+          <option>Xenos Threat</option>
+        </select>
+      </div>
+      <div class="flex flex-col gap-3 min-w-[200px]">
+        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Classification</span>
+        <select class="bg-neutral-900 border border-neutral-700 text-xs font-['Space_Grotesk'] uppercase px-4 py-3 focus:border-red-600 focus:ring-1 focus:ring-red-900 outline-none">
+          <option>All Units</option>
+          <option>Troops</option>
+          <option>Elites</option>
+          <option>Heavy Support</option>
+        </select>
+      </div>
+      <div class="flex items-center gap-4 mt-auto">
+        <button class="px-6 py-3 border border-red-900 text-xs font-bold uppercase bg-red-950/30 text-red-500 hover:bg-red-800 hover:text-white transition-all">In Stock</button>
+        <button class="px-6 py-3 border border-neutral-800 text-xs font-bold uppercase hover:bg-neutral-800 transition-all text-neutral-500">Backorder</button>
+      </div>
+      <div class="md:ml-auto text-xs font-['Space_Grotesk'] text-neutral-500 uppercase">Registry Count: 48 units</div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+      <!-- Card 1 -->
+      <article class="stone-slab group overflow-hidden hover:border-red-600/50 transition-all">
+        <div class="p-4">
+          <div class="heavy-frame bg-black aspect-square overflow-hidden mb-6">
+            <img alt="Space Marine" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFgvSuSVoL8n6mBUSeLRdJPmmuOXxTcrrOaxJfL1MlANhv8pNzS3g2KK6jqz_Pc8ShW0fFwwE21w5OsTh-hn6rNDHP0_IkuWwXMHucayrytKSbeOEc6bJOgYH-K6_p1OVIWpNSpWA90UlGqQxhpUEcWdpTZ6Si8H1VQDXZ3WD0YN9V5I8SebfXQ3ITu2dbi0W4rj2T5cFjiRmiG4h6hqWg1a_QMBHTsDiNwo_K7kVqL3cXXE9fAmvNANu9L8uE0l7xBvHJ5wIVbKI">
+            <div class="absolute top-4 right-4">
+              <span class="bg-secondary/10 text-secondary border border-secondary/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">Gold Tier</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-headline-md text-lg uppercase text-on-surface leading-tight">Intercessor Prime</h3>
+            <span class="text-red-500 font-['Space_Grotesk'] font-bold text-xl">$34.99</span>
+          </div>
+          <p class="text-[10px] text-neutral-500 uppercase tracking-[0.2em] mb-8">Space Marines</p>
+          <button class="w-full machined-plate py-4 text-xs font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_15px_rgba(158,0,0,0.6)] transition-all clip-corner">
             Initiate Purchase
           </button>
-</div>
-</article>
-<!-- Card 2 -->
-<article class="machined-plate border border-neutral-800 group">
-<div class="p-4">
-<div class="heavy-frame bg-black aspect-square overflow-hidden mb-4">
-<img alt="Chaos Lord Miniature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" data-alt="macro photo of a dark gothic warrior miniature with spiked obsidian armor and glowing green runes, atmospheric smoke, dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcVhTJ493aC__5YaIvTQ6_ACoiqBhOyzxqCVONvS1a9-DB78QfkZzL45krUAqhJzeJA2RIGotdMaEsFIG0yL3GIIWOhVKtusDuULQZ4ORwUmdbaRPJY4L6gEQRiJylMuiO9Qjtv5L1AKVO7z4sdLt1DqZpUM4DJ6ExtiV0Zp_fRmz7U5FRWzvaFOWKGi5UeL0SfKUehC5BaPZbexZFFioe531YGVkAoaGU_z5RqZB3KutxM1ucXCSFeag34bfe-9dnOM_CwTw_A4A">
-<div class="absolute top-2 right-2">
-<span class="bg-neutral-800 text-neutral-400 border border-neutral-700 px-2 py-0.5 text-[10px] font-bold uppercase tracking-tighter">Iron Tier</span>
-</div>
-</div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-sm uppercase text-on-surface leading-tight">Chaos Desolator</h3>
-<span class="text-red-500 font-['Space_Grotesk'] font-bold">$42.50</span>
-</div>
-<p class="text-[10px] text-neutral-500 uppercase tracking-widest mb-6">Faction: Chaos Legions</p>
-<div class="h-px bg-neutral-800 mb-6 relative">
-<div class="absolute inset-0 bg-red-900/30 w-2/3"></div>
-</div>
-<button class="w-full metal-button py-3 text-xs font-['Space_Grotesk'] font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_12px_rgba(158,0,0,0.6)] transition-all">
+        </div>
+      </article>
+      <!-- Repeat more cards as needed or use a mock -->
+      <article class="stone-slab group overflow-hidden hover:border-red-600/50 transition-all">
+        <div class="p-4">
+          <div class="heavy-frame bg-black aspect-square overflow-hidden mb-6">
+            <img alt="Chaos Lord" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcVhTJ493aC__5YaIvTQ6_ACoiqBhOyzxqCVONvS1a9-DB78QfkZzL45krUAqhJzeJA2RIGotdMaEsFIG0yL3GIIWOhVKtusDuULQZ4ORwUmdbaRPJY4L6gEQRiJylMuiO9Qjtv5L1AKVO7z4sdLt1DqZpUM4DJ6ExtiV0Zp_fRmz7U5FRWzvaFOWKGi5UeL0SfKUehC5BaPZbexZFFioe531YGVkAoaGU_z5RqZB3KutxM1ucXCSFeag34bfe-9dnOM_CwTw_A4A">
+          </div>
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-headline-md text-lg uppercase text-on-surface leading-tight">Chaos Desolator</h3>
+            <span class="text-red-500 font-['Space_Grotesk'] font-bold text-xl">$42.50</span>
+          </div>
+          <p class="text-[10px] text-neutral-500 uppercase tracking-[0.2em] mb-8">Chaos Legions</p>
+          <button class="w-full machined-plate py-4 text-xs font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_15px_rgba(158,0,0,0.6)] transition-all clip-corner">
             Initiate Purchase
           </button>
-</div>
-</article>
-<!-- Card 3 -->
-<article class="machined-plate border border-neutral-800 group">
-<div class="p-4">
-<div class="heavy-frame bg-black aspect-square overflow-hidden mb-4">
-<img alt="Ork Warboss Miniature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" data-alt="detailed miniature of a hulking ork beast with rusted metal armor and a massive jagged axe, industrial warehouse setting, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnIxe9Fahxhn_POCpu6AuFSD9DPrO_bGchkRJXgAW6g_M0pPjEbnmpWOGtcjdbPzwD8dmI_KcL5kB6XjmWNWsohlusSE5NaxKP_SJgd0P7DkD79R1a56GRMOIhFswEP6h-7F_ai_dYh_--xu4N2pjVxBnUe8qYkDjnMeeNB9l6yvt4b7FTakt5kSbIjeZHFjLCnBDE0duOy-DdBexSBc4KKTZB77ZQ_cM4z0Io8R2rM8dOCaiHipRb3JnZ8or-JkUnRPaO5i4g-c">
-<div class="absolute top-2 right-2">
-<span class="bg-secondary/10 text-secondary border border-secondary/30 px-2 py-0.5 text-[10px] font-bold uppercase tracking-tighter">Gold Tier</span>
-</div>
-</div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-sm uppercase text-on-surface leading-tight">Gruk’s Mega-Boss</h3>
-<span class="text-red-500 font-['Space_Grotesk'] font-bold">$29.00</span>
-</div>
-<p class="text-[10px] text-neutral-500 uppercase tracking-widest mb-6">Faction: Ork Hordes</p>
-<div class="h-px bg-neutral-800 mb-6 relative">
-<div class="absolute inset-0 bg-red-900/30 w-1/2"></div>
-</div>
-<button class="w-full metal-button py-3 text-xs font-['Space_Grotesk'] font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_12px_rgba(158,0,0,0.6)] transition-all">
-            Initiate Purchase
-          </button>
-</div>
-</article>
-<!-- Card 4 -->
-<article class="machined-plate border border-neutral-800 group">
-<div class="p-4">
-<div class="heavy-frame bg-black aspect-square overflow-hidden mb-4">
-<img alt="Eldar Ranger Miniature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" data-alt="sleek elven-style futuristic sniper miniature in camouflage cloak, holding a long rifle, ethereal forest background, soft blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1nNzTBm786yArLAWsG5tHlJUc7Ni0G2L63-fh_LHbdKV8uvCCB-uJ04hX6IMHznSAxX1Y8-0UzOshQHXaoXgoAiLJty2gU6qbI6McrnI7RcoyEJ6n1Fzjf5PaZoz_vLTGMBaIuC16IjmVBuBoAFldOAWAajJa5awVq8KncK322zLKuc8vh-qCkujDc45ybynVLko5o3NhPMmxHHdfH3kl5931KOs9OLKBLDPkF3zg80QBMF9TcqcEOwBBwwk_rsxlz7DUtQtEl5Y">
-<div class="absolute top-2 right-2">
-<span class="bg-neutral-800 text-neutral-400 border border-neutral-700 px-2 py-0.5 text-[10px] font-bold uppercase tracking-tighter">Iron Tier</span>
-</div>
-</div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-sm uppercase text-on-surface leading-tight">Void-Stalker Ranger</h3>
-<span class="text-red-500 font-['Space_Grotesk'] font-bold">$18.99</span>
-</div>
-<p class="text-[10px] text-neutral-500 uppercase tracking-widest mb-6">Faction: Xenos Threat</p>
-<div class="h-px bg-neutral-800 mb-6 relative">
-<div class="absolute inset-0 bg-red-900/30 w-1/4"></div>
-</div>
-<button class="w-full metal-button py-3 text-xs font-['Space_Grotesk'] font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_12px_rgba(158,0,0,0.6)] transition-all">
-            Initiate Purchase
-          </button>
-</div>
-</article>
-<!-- Card 5 (Repeated for Grid Visual) -->
-<article class="machined-plate border border-neutral-800 group">
-<div class="p-4">
-<div class="heavy-frame bg-black aspect-square overflow-hidden mb-4">
-<img alt="Ancient Walker Miniature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" data-alt="massive robotic walker miniature with rusted steel plates and mechanical gears exposed, weathered and battle-worn, dark moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcPJePpTzFuJ1XTyT3BHwOGowbS2B8C_kdm4qBKI8rG1DN0f6YikfCoCdalRz3QAVSDclKbAmVKI8MhKKlGbb8jIjxLMkMQEA_zO1wSgBdyyL1ej3qMFaMfFtdPBHT505uAAfkj1Hgmgphq6dgQ9jwrj4pafOpzABCaNNdORvWOyCGH8NsK23DrS9N-_J0swfq2Cj6N22clte_AxkQi6qOTLZBHKuUKBtYjAvgmhW_aqJVSrpyAN2JIJ_P5-M0WzeVSnLK1RnwRO4">
-</div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-sm uppercase text-on-surface leading-tight">Ancient Dread-naught</h3>
-<span class="text-red-500 font-['Space_Grotesk'] font-bold">$89.00</span>
-</div>
-<p class="text-[10px] text-neutral-500 uppercase tracking-widest mb-6">Faction: Space Marines</p>
-<div class="h-px bg-neutral-800 mb-6 relative">
-<div class="absolute inset-0 bg-red-900/30 w-full"></div>
-</div>
-<button class="w-full metal-button py-3 text-xs font-['Space_Grotesk'] font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_12px_rgba(158,0,0,0.6)] transition-all">
-            Initiate Purchase
-          </button>
-</div>
-</article>
-</section>
-<!-- Pagination -->
-<div class="mt-20 flex justify-center items-center gap-4">
-<button class="machined-plate border border-neutral-800 w-12 h-12 flex items-center justify-center text-neutral-500 hover:text-red-600 transition-colors active:scale-95">
-<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
-</button>
-<div class="flex gap-2">
-<button class="w-12 h-12 machined-plate border border-red-600 text-red-600 font-['Space_Grotesk'] font-bold">01</button>
-<button class="w-12 h-12 machined-plate border border-neutral-800 text-neutral-500 font-['Space_Grotesk'] font-bold hover:bg-neutral-800 transition-colors">02</button>
-<button class="w-12 h-12 machined-plate border border-neutral-800 text-neutral-500 font-['Space_Grotesk'] font-bold hover:bg-neutral-800 transition-colors">03</button>
-</div>
-<button class="machined-plate border border-neutral-800 w-12 h-12 flex items-center justify-center text-neutral-500 hover:text-red-600 transition-colors active:scale-95">
-<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
-</button>
-</div>
-</main>
-<!-- Footer -->
-<footer class="w-full border-t-4 border-neutral-800 mt-20 bg-neutral-950 dark:bg-black border-t-2 border-red-900/30 shadow-[0_-4px_10px_rgba(0,0,0,0.8)] cursor-crosshair">
-<div class="w-full py-12 px-12 flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto">
-<div class="flex flex-col gap-2">
-<img alt="COR-MAG 3D" class="h-12 w-auto object-contain filter grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all duration-500 mb-2" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9">
-<span class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-600">© 40,000 COR-MAG 3D - FORGED IN ETERNAL CONFLICT</span>
-</div>
-<div class="flex gap-8 font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase">
-<a class="text-neutral-600 hover:text-red-500 hover:tracking-[0.2em] transition-all duration-300" href="#">Privacy Protocol</a>
-<a class="text-neutral-600 hover:text-red-500 hover:tracking-[0.2em] transition-all duration-300" href="#">Shipping Log</a>
-<a class="text-neutral-600 hover:text-red-500 hover:tracking-[0.2em] transition-all duration-300" href="#">Merchant Rights</a>
-</div>
-<div class="flex gap-4">
-<div class="w-8 h-8 rounded-full border border-neutral-800 flex items-center justify-center text-neutral-600 hover:text-red-600 hover:border-red-600 transition-all">
-<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
-</div>
-<div class="w-8 h-8 rounded-full border border-neutral-800 flex items-center justify-center text-neutral-600 hover:text-red-600 hover:border-red-600 transition-all">
-<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
-</div>
-</div>
-</div>
-</footer>
-</body></html>
+        </div>
+      </article>
+      <!-- ... other cards ... -->
+    </section>
+
+    <!-- Pagination -->
+    <div class="mt-20 flex justify-center items-center gap-6">
+      <button class="machined-plate w-14 h-14 flex items-center justify-center text-white hover:scale-110 active:scale-95 transition-all">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </button>
+      <div class="flex gap-4">
+        <button class="w-14 h-14 bg-red-600 text-white font-bold font-['Space_Grotesk'] flex items-center justify-center">01</button>
+        <button class="w-14 h-14 border border-neutral-800 text-neutral-500 font-bold font-['Space_Grotesk'] hover:bg-neutral-800 flex items-center justify-center">02</button>
+      </div>
+      <button class="machined-plate w-14 h-14 flex items-center justify-center text-white hover:scale-110 active:scale-95 transition-all">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+    </div>
+  </main>
+
+  <footer class="w-full border-t-4 border-neutral-800 bg-black border-t-2 border-red-900/30 mt-20">
+    <div class="w-full py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto">
+      <div class="flex flex-col items-center md:items-start gap-4">
+        <img alt="COR-MAG 3D" class="h-10 object-contain grayscale brightness-75" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9">
+        <p class="font-['Space_Grotesk'] text-[10px] font-medium tracking-[0.3em] uppercase text-neutral-600">© 40,000 COR-MAG 3D</p>
+      </div>
+      <div class="flex gap-8">
+        <span class="material-symbols-outlined text-neutral-500 hover:text-red-600 cursor-pointer text-2xl">share</span>
+        <span class="material-symbols-outlined text-neutral-500 hover:text-red-600 cursor-pointer text-2xl">mail</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

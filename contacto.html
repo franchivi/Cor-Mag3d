@@ -1,287 +1,206 @@
-<!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>COR-MAG 3D - CONTACT &amp; INTEL</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+<html class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="style.css">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#2a2a2a",
+            "on-secondary-fixed": "#261900",
+            "on-tertiary-fixed-variant": "#44474c",
+            "surface-container-lowest": "#0e0e0e",
+            "primary-container": "#9e0000",
+            "on-error": "#690005",
+            "on-tertiary": "#2d3135",
+            "on-secondary-container": "#dab36a",
+            "secondary": "#e9c176",
+            "surface-variant": "#353534",
+            "tertiary-container": "#494c51",
+            "secondary-fixed-dim": "#e9c176",
+            "secondary-fixed": "#ffdea5",
+            "on-surface-variant": "#e4beb8",
+            "surface-container": "#201f1f",
+            "secondary-container": "#604403",
+            "primary-fixed": "#ffdad4",
+            "tertiary-fixed-dim": "#c4c6cc",
+            "error-container": "#93000a",
+            "surface-bright": "#393939",
+            "surface-dim": "#131313",
+            "surface-container-highest": "#353534",
+            "background": "#131313",
+            "inverse-primary": "#b91d11",
+            "on-tertiary-fixed": "#191c20",
+            "on-primary-fixed": "#410000",
+            "surface-tint": "#ffb4a8",
+            "outline": "#ab8983",
+            "on-tertiary-container": "#bbbdc3",
+            "surface-container-low": "#1c1b1b",
+            "on-primary-container": "#ffa698",
+            "error": "#ffb4ab",
+            "outline-variant": "#5b403c",
+            "surface": "#131313",
+            "on-surface": "#e5e2e1",
+            "tertiary": "#c4c6cc",
+            "on-background": "#e5e2e1",
+            "primary-fixed-dim": "#ffb4a8",
+            "on-primary-fixed-variant": "#930000",
+            "on-error-container": "#ffdad6",
+            "on-primary": "#690000",
+            "primary": "#ffb4a8",
+            "on-secondary": "#412d00",
+            "inverse-on-surface": "#313030",
+            "on-secondary-fixed-variant": "#5d4201",
+            "inverse-surface": "#e5e2e1",
+            "tertiary-fixed": "#e1e2e9"
+          }
         }
-        .machined-plate {
-            background: linear-gradient(145deg, #2a2a2a 0%, #131313 100%);
-            box-shadow: inset 1px 1px 0px rgba(255,255,255,0.05), 4px 4px 0px 0px rgba(0,0,0,1);
-        }
-        .etched-input {
-            box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        .glow-hover:hover {
-            box-shadow: 0 0 15px rgba(158, 0, 0, 0.4);
-        }
-        .rivet {
-            width: 6px;
-            height: 6px;
-            background: #44474c;
-            border-radius: 50%;
-            box-shadow: inset 1px 1px 1px rgba(0,0,0,0.8), 1px 1px 0px rgba(255,255,255,0.1);
-        }
-    </style>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "surface-container-high": "#2a2a2a",
-                      "on-secondary-fixed": "#261900",
-                      "on-tertiary-fixed-variant": "#44474c",
-                      "surface-container-lowest": "#0e0e0e",
-                      "primary-container": "#9e0000",
-                      "on-error": "#690005",
-                      "on-tertiary": "#2d3135",
-                      "on-secondary-container": "#dab36a",
-                      "secondary": "#e9c176",
-                      "surface-variant": "#353534",
-                      "tertiary-container": "#494c51",
-                      "secondary-fixed-dim": "#e9c176",
-                      "secondary-fixed": "#ffdea5",
-                      "on-surface-variant": "#e4beb8",
-                      "surface-container": "#201f1f",
-                      "secondary-container": "#604403",
-                      "primary-fixed": "#ffdad4",
-                      "tertiary-fixed-dim": "#c4c6cc",
-                      "error-container": "#93000a",
-                      "surface-bright": "#393939",
-                      "surface-dim": "#131313",
-                      "surface-container-highest": "#353534",
-                      "background": "#131313",
-                      "inverse-primary": "#b91d11",
-                      "on-tertiary-fixed": "#191c20",
-                      "on-primary-fixed": "#410000",
-                      "surface-tint": "#ffb4a8",
-                      "outline": "#ab8983",
-                      "on-tertiary-container": "#bbbdc3",
-                      "surface-container-low": "#1c1b1b",
-                      "on-primary-container": "#ffa698",
-                      "error": "#ffb4ab",
-                      "outline-variant": "#5b403c",
-                      "surface": "#131313",
-                      "on-surface": "#e5e2e1",
-                      "tertiary": "#c4c6cc",
-                      "on-background": "#e5e2e1",
-                      "primary-fixed-dim": "#ffb4a8",
-                      "on-primary-fixed-variant": "#930000",
-                      "on-error-container": "#ffdad6",
-                      "on-primary": "#690000",
-                      "primary": "#ffb4a8",
-                      "on-secondary": "#412d00",
-                      "inverse-on-surface": "#313030",
-                      "on-secondary-fixed-variant": "#5d4201",
-                      "inverse-surface": "#e5e2e1",
-                      "tertiary-fixed": "#e1e2e9"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "spacing": {
-                      "margin": "48px",
-                      "container-max": "1440px",
-                      "unit": "8px",
-                      "gutter": "24px"
-              },
-              "fontFamily": {
-                      "body-md": ["Be Vietnam Pro"],
-                      "label-sm": ["Space Grotesk"],
-                      "body-lg": ["Be Vietnam Pro"],
-                      "headline-md": ["Space Grotesk"],
-                      "display-xl": ["Space Grotesk"],
-                      "headline-lg": ["Space Grotesk"]
-              },
-              "fontSize": {
-                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                      "label-sm": ["12px", {"lineHeight": "1.0", "fontWeight": "700"}],
-                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                      "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "0.02em", "fontWeight": "600"}],
-                      "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                      "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}]
-              }
-            },
-          },
-        }
-    </script>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
+      }
     }
-  </style>
+  </script>
 </head>
-<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-white">
-<!-- TopAppBar Component -->
-<header class="bg-neutral-950 dark:bg-black fixed top-0 w-full border-b-2 border-neutral-800 z-50 shadow-[0_4px_0_0_rgba(0,0,0,1)]">
-<div class="flex justify-between items-center w-full px-12 py-4 max-w-screen-2xl mx-auto">
-<div class="flex items-center gap-4">
-<button class="text-red-700 dark:text-red-600 active:translate-y-1 transition-all duration-100">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-<img alt="COR-MAG 3D Logo" class="h-10 w-auto object-contain brightness-110 contrast-125" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9"/>
-</div>
-<nav class="hidden md:flex gap-8">
-<a class="font-['Space_Grotesk'] font-bold uppercase tracking-widest text-neutral-400 hover:text-neutral-100 transition-colors hover:drop-shadow-[0_0_8px_rgba(158,0,0,0.8)]" href="#">Home</a>
-<a class="font-['Space_Grotesk'] font-bold uppercase tracking-widest text-neutral-400 hover:text-neutral-100 transition-colors hover:drop-shadow-[0_0_8px_rgba(158,0,0,0.8)]" href="#">Catalog</a>
-<a class="font-['Space_Grotesk'] font-bold uppercase tracking-widest text-neutral-400 hover:text-neutral-100 transition-colors hover:drop-shadow-[0_0_8px_rgba(158,0,0,0.8)]" href="#">Commission</a>
-<a class="font-['Space_Grotesk'] font-bold uppercase tracking-widest text-red-600 border-b-2 border-red-600 pb-1" href="#">Intel</a>
-</nav>
-<button class="text-red-700 dark:text-red-600 active:translate-y-1 transition-all duration-100">
-<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-</button>
-</div>
-</header>
-<main class="pt-32 pb-20 px-12 max-w-screen-2xl mx-auto">
-<!-- Hero Section / Title -->
-<div class="mb-16 border-l-4 border-red-700 pl-8">
-<h2 class="font-display-xl text-display-xl uppercase tracking-tighter mb-2">COMMUNICATION <span class="text-primary-container">ARRAY</span></h2>
-<p class="font-body-lg text-body-lg text-neutral-500 max-w-2xl">Establish contact with the forge. Inquire about custom sculpts, shipping logistics, or painting protocols. All transmissions are monitored.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-<!-- FAQ Section (Left Column) -->
-<section class="lg:col-span-7 space-y-6">
-<div class="flex items-center gap-4 mb-8">
-<span class="material-symbols-outlined text-red-600" data-icon="terminal">terminal</span>
-<h3 class="font-headline-md text-headline-md uppercase tracking-widest">DATA DECRYPTION (FAQ)</h3>
-</div>
-<!-- FAQ Accordion Item 1 -->
-<div class="machined-plate border border-neutral-800 p-6 group">
-<div class="flex justify-between items-center cursor-pointer">
-<h4 class="font-headline-md text-body-lg font-bold uppercase tracking-wide group-hover:text-red-500 transition-colors">WHAT IS THE STANDARD FORGE TIME FOR PAINTED MINIS?</h4>
-<span class="material-symbols-outlined text-neutral-600" data-icon="expand_more">expand_more</span>
-</div>
-<div class="mt-4 pt-4 border-t border-red-900/30 text-neutral-400 font-body-md">
-                        Standard battle-ready painting takes 14-21 solar days. For Display Grade artifacts, allow up to 45 days for complex layering and weathering effects.
-                    </div>
-</div>
-<!-- FAQ Accordion Item 2 -->
-<div class="machined-plate border border-neutral-800 p-6 group">
-<div class="flex justify-between items-center cursor-pointer">
-<h4 class="font-headline-md text-body-lg font-bold uppercase tracking-wide group-hover:text-red-500 transition-colors">SECURE LOGISTICS &amp; SHIPPING PROTOCOLS</h4>
-<span class="material-symbols-outlined text-neutral-600" data-icon="expand_more">expand_more</span>
-</div>
-<div class="mt-4 pt-4 border-t border-red-900/30 text-neutral-400 font-body-md">
-                        We deploy worldwide via hardened transport cases. All shipments are insured against warp-storms and transit damage. Tracking codes are provided upon dispatch.
-                    </div>
-</div>
-<!-- FAQ Accordion Item 3 -->
-<div class="machined-plate border border-neutral-800 p-6 group">
-<div class="flex justify-between items-center cursor-pointer">
-<h4 class="font-headline-md text-body-lg font-bold uppercase tracking-wide group-hover:text-red-500 transition-colors">CUSTOM COMMISSIONS &amp; DNA SPLICING</h4>
-<span class="material-symbols-outlined text-neutral-600" data-icon="expand_more">expand_more</span>
-</div>
-<div class="mt-4 pt-4 border-t border-red-900/30 text-neutral-400 font-body-md">
-                        Custom sculpt alterations are available. Use the transmission form to describe your vision. Our master smiths will review and provide a credit quote.
-                    </div>
-</div>
-<!-- FAQ Accordion Item 4 -->
-<div class="machined-plate border border-neutral-800 p-6 group">
-<div class="flex justify-between items-center cursor-pointer">
-<h4 class="font-headline-md text-body-lg font-bold uppercase tracking-wide group-hover:text-red-500 transition-colors">REPAIR &amp; MAINTENANCE SERVICES</h4>
-<span class="material-symbols-outlined text-neutral-600" data-icon="expand_more">expand_more</span>
-</div>
-<div class="hidden mt-4 pt-4 border-t border-red-900/30 text-neutral-400 font-body-md">
-                        If an artifact is damaged in combat, we offer repair services at our primary forge location. Fees vary by severity.
-                    </div>
-</div>
-</section>
-<!-- Contact Form Section (Right Column) -->
-<section class="lg:col-span-5">
-<div class="machined-plate border-2 border-neutral-800 relative p-8">
-<!-- Rivets -->
-<div class="absolute top-2 left-2 rivet"></div>
-<div class="absolute top-2 right-2 rivet"></div>
-<div class="absolute bottom-2 left-2 rivet"></div>
-<div class="absolute bottom-2 right-2 rivet"></div>
-<div class="flex items-center gap-3 mb-8 border-b border-red-900/30 pb-4">
-<span class="material-symbols-outlined text-red-600" data-icon="mail">mail</span>
-<h3 class="font-headline-md text-headline-md uppercase tracking-tighter">SECURE TRANSMISSION</h3>
-</div>
-<form action="#" class="space-y-6">
-<div class="space-y-2">
-<label class="font-label-sm text-label-sm uppercase text-neutral-500 tracking-[0.2em]">IDENTIFICATION (NAME)</label>
-<input class="w-full bg-neutral-900 border-neutral-800 text-on-surface p-4 etched-input focus:ring-1 focus:ring-red-600 focus:border-red-600 font-['Space_Grotesk']" placeholder="OPERATOR ID" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="font-label-sm text-label-sm uppercase text-neutral-500 tracking-[0.2em]">COMM-LINK (EMAIL)</label>
-<input class="w-full bg-neutral-900 border-neutral-800 text-on-surface p-4 etched-input focus:ring-1 focus:ring-red-600 focus:border-red-600 font-['Space_Grotesk']" placeholder="ENCRYPTED_ADDRESS@VOID.NET" type="email"/>
-</div>
-<div class="space-y-2">
-<label class="font-label-sm text-label-sm uppercase text-neutral-500 tracking-[0.2em]">INTEL (MESSAGE)</label>
-<textarea class="w-full bg-neutral-900 border-neutral-800 text-on-surface p-4 etched-input focus:ring-1 focus:ring-red-600 focus:border-red-600 font-['Space_Grotesk']" placeholder="ENTER TRANSMISSION DATA..." rows="5"></textarea>
-</div>
-<button class="w-full bg-gradient-to-b from-red-600 to-red-900 text-white font-['Space_Grotesk'] font-bold uppercase tracking-widest py-5 border-t border-red-400/30 glow-hover active:translate-y-1 transition-all shadow-[0_4px_0_0_rgba(0,0,0,1)]" type="submit">
-                            SEND TRANSMISSION
-                        </button>
-</form>
-</div>
-<!-- Alternative Contact Info -->
-<div class="mt-8 grid grid-cols-2 gap-4">
-<div class="machined-plate p-4 border border-neutral-800 flex flex-col items-center justify-center text-center">
-<span class="material-symbols-outlined text-red-700 mb-2" data-icon="location_on">location_on</span>
-<span class="font-label-sm text-[10px] uppercase text-neutral-500">FORGE SECTOR</span>
-<span class="font-body-md text-xs font-bold">TERRA-IV CENTRAL</span>
-</div>
-<div class="machined-plate p-4 border border-neutral-800 flex flex-col items-center justify-center text-center">
-<span class="material-symbols-outlined text-red-700 mb-2" data-icon="schedule">schedule</span>
-<span class="font-label-sm text-[10px] uppercase text-neutral-500">OPS HOURS</span>
-<span class="font-body-md text-xs font-bold">0800 - 2000 STU</span>
-</div>
-</div>
-</section>
-</div>
-<!-- Decorative Background Element -->
-<div class="mt-20 opacity-20 flex justify-center">
-<img alt="Industrial machinery detail" class="w-full h-48 object-cover grayscale brightness-50 contrast-150 rounded-lg" data-alt="close-up of weathered industrial gears and metallic machinery parts with red lighting and dark heavy shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_iiJ7uIbOhtwF8pBp1y-ZekItQUHYz9wfBzbfe1ILywPMSllN5aB1sBewwJIELWGD6UDORAapaA6PRao8Skuwjh5b-ut9z0OZf2ZuKKr1R9tASXOCMlg9A9OFgIx4obDa1p28rOsRVqbWopVnfjXxIOwP7rvr_8ht9Qb0AABpdj3TbobJ2uiShzGJRhXd96NZSvSinDFXICClpn_UoWvT1SRtCgY7w3V7uP8j94NwvZBidHGetARUDLHufpJwhpApCCbbM7abRsM"/>
-</div>
-</main>
-<!-- Social Media Bar -->
-<div class="w-full border-t border-neutral-800 bg-neutral-950 py-8 px-12">
-<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-<div class="flex items-center gap-6">
-<span class="font-label-sm uppercase text-neutral-500 tracking-[0.3em]">SOCIAL UPLINK:</span>
-<div class="flex gap-4">
-<a class="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-600 transition-all active:scale-90" href="#">
-<span class="material-symbols-outlined" data-icon="public">public</span>
-</a>
-<a class="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-600 transition-all active:scale-90" href="#">
-<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
-</a>
-<a class="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-600 transition-all active:scale-90" href="#">
-<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
-</a>
-</div>
-</div>
-<div class="flex items-center gap-2 text-neutral-500 font-label-sm">
-<span class="material-symbols-outlined text-[14px]" data-icon="security" data-weight="fill" style="font-variation-settings: 'FILL' 1;">security</span>
-<span>SECURE CONNECTION ESTABLISHED</span>
-</div>
-</div>
-</div>
-<!-- Footer Component -->
-<footer class="w-full border-t-4 border-neutral-800 mt-0 bg-neutral-950 dark:bg-black">
-<div class="w-full py-12 px-12 flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto border-t-2 border-red-900/30 shadow-[0_-4px_10px_rgba(0,0,0,0.8)]">
-<div class="flex flex-col gap-2">
-<img alt="COR-MAG 3D Logo" class="h-8 w-auto object-contain opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="https://lh3.googleusercontent.com/aida/ADBb0ujwYX57lBTNMsNH9TlgrV9a4SVZCPvf0frd7W0FPAPCRAgrtSOosBLl-UZcI7tCL_QCF1UpeIA1PLgZ76HnUz-C1k0KxZ0GL4PmZYih-Ar4acn-lTFH69wtnIIbsM88rQz3gH1VZmpaXyvOBBmk10oWCMfj2koH9g22DuZesTB3HLylowN2Fzq24Gla2vr-uAykyPw8z3-768ZhypSaeJ_HSgm44aU4K4o3RCD0A4kagEk_44z-uAbglgXyCbDSNiDI7fezE6zyAw"/>
-<p class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-600">© 40,000 COR-MAG 3D - FORGED IN ETERNAL CONFLICT</p>
-</div>
-<div class="flex gap-8 cursor-crosshair">
-<a class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-600 hover:text-red-500 hover:tracking-[0.2em] transition-all duration-300" href="#">Privacy Protocol</a>
-<a class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-600 hover:text-red-500 hover:tracking-[0.2em] transition-all duration-300" href="#">Shipping Log</a>
-<a class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-600 hover:text-red-500 hover:tracking-[0.2em] transition-all duration-300" href="#">Merchant Rights</a>
-</div>
-</div>
-</footer>
-</body></html>
+<body class="bg-background text-on-background font-body-md min-h-screen relative overflow-x-hidden">
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full border-b-2 border-neutral-800 z-50 bg-black/90 backdrop-blur-md shadow-2xl">
+    <div class="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
+      <div class="flex items-center gap-4">
+        <label for="mobile-menu" class="md:hidden cursor-pointer">
+          <span class="material-symbols-outlined text-red-700 text-3xl">menu</span>
+        </label>
+        <input type="checkbox" id="mobile-menu" class="hidden peer">
+        
+        <a href="index.html">
+          <img alt="COR-MAG 3D" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9"/>
+        </a>
+      </div>
+      
+      <nav class="hidden md:flex gap-10">
+        <a class="nav-link nav-link-inactive" href="index.html">Home</a>
+        <a class="nav-link nav-link-inactive" href="catalogo.html">Catalog</a>
+        <a class="nav-link nav-link-inactive" href="#">Commission</a>
+        <a class="nav-link nav-link-active" href="contacto.html">Intel</a>
+      </nav>
+      
+      <div class="fixed inset-0 bg-black/95 z-[100] transition-all duration-300 translate-x-full peer-checked:translate-x-0 flex flex-col items-center justify-center gap-8 md:hidden">
+        <label for="mobile-menu" class="absolute top-6 right-6 cursor-pointer">
+          <span class="material-symbols-outlined text-white text-4xl">close</span>
+        </label>
+        <a class="text-3xl nav-link nav-link-inactive" href="index.html">Home</a>
+        <a class="text-3xl nav-link nav-link-inactive" href="catalogo.html">Catalog</a>
+        <a class="text-3xl nav-link nav-link-inactive" href="#">Commission</a>
+        <a class="text-3xl nav-link nav-link-active" href="contacto.html">Intel</a>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <span class="material-symbols-outlined text-neutral-400 hover:text-red-600 cursor-pointer hidden sm:block">search</span>
+        <span class="material-symbols-outlined text-red-700 text-3xl cursor-pointer">shopping_cart</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Watermark Background -->
+  <div class="fixed inset-0 z-[-1] pointer-events-none opacity-5 flex items-center justify-center">
+    <img src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9" 
+         class="w-full md:w-1/2 grayscale invert" alt="Watermark">
+  </div>
+
+  <main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+    <!-- Header Section -->
+    <div class="mb-16 border-l-8 border-red-700 pl-8">
+      <h1 class="text-4xl md:text-7xl font-display-xl uppercase tracking-tighter mb-4">COMMUNICATION <br><span class="text-primary-container">ARRAY</span></h1>
+      <p class="text-lg md:text-xl text-neutral-500 max-w-2xl">Establish contact with the forge. All transmissions are monitored for quality and tactical integrity.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      <!-- FAQ Section -->
+      <section class="lg:col-span-7 space-y-8">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="material-symbols-outlined text-red-600 text-3xl">terminal</span>
+          <h3 class="text-2xl font-headline-md uppercase tracking-widest text-white">DATA DECRYPTION</h3>
+        </div>
+        
+        <div class="space-y-6">
+          <div class="stone-slab p-8 group">
+            <h4 class="text-xl font-bold uppercase tracking-wide text-on-surface mb-4">WHAT IS THE STANDARD FORGE TIME?</h4>
+            <p class="text-neutral-400 leading-relaxed">
+              Standard deployment takes 14-21 solar days. For Masterwork artifacts, allow up to 45 days for complex etching and weathering processes.
+            </p>
+          </div>
+          <div class="stone-slab p-8 group">
+            <h4 class="text-xl font-bold uppercase tracking-wide text-on-surface mb-4">LOGISTICS &amp; TRANSPORT</h4>
+            <p class="text-neutral-400 leading-relaxed">
+              We deploy worldwide via hardened transport cases. Insured against warp-storms and transit damage. Tracking is standard.
+            </p>
+          </div>
+          <div class="stone-slab p-8 group">
+            <h4 class="text-xl font-bold uppercase tracking-wide text-on-surface mb-4">CUSTOM SPLICING</h4>
+            <p class="text-neutral-400 leading-relaxed">
+              Custom sculpt alterations are available upon request. Use the form to describe your vision; our smiths will review the complexity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="lg:col-span-5">
+        <div class="machined-plate p-10 relative">
+          <div class="flex items-center gap-4 mb-10 border-b border-red-900/30 pb-6">
+            <span class="material-symbols-outlined text-red-600 text-3xl">mail</span>
+            <h3 class="text-2xl font-headline-md uppercase text-white">SECURE TRANSMISSION</h3>
+          </div>
+          
+          <form class="space-y-8">
+            <div class="space-y-3">
+              <label class="text-[10px] font-bold uppercase text-neutral-500 tracking-[0.3em]">IDENTIFICATION</label>
+              <input class="w-full bg-black/60 border-neutral-800 text-white p-5 focus:ring-1 focus:ring-red-600 focus:border-red-600 outline-none font-['Space_Grotesk']" placeholder="OPERATOR_NAME" type="text"/>
+            </div>
+            <div class="space-y-3">
+              <label class="text-[10px] font-bold uppercase text-neutral-500 tracking-[0.3em]">COMM-LINK</label>
+              <input class="w-full bg-black/60 border-neutral-800 text-white p-5 focus:ring-1 focus:ring-red-600 focus:border-red-600 outline-none font-['Space_Grotesk']" placeholder="EMAIL_ADDRESS" type="email"/>
+            </div>
+            <div class="space-y-3">
+              <label class="text-[10px] font-bold uppercase text-neutral-500 tracking-[0.3em]">INTEL</label>
+              <textarea class="w-full bg-black/60 border-neutral-800 text-white p-5 focus:ring-1 focus:ring-red-600 focus:border-red-600 outline-none font-['Space_Grotesk']" placeholder="MESSAGE_DATA..." rows="6"></textarea>
+            </div>
+            <button class="w-full bg-gradient-to-b from-red-600 to-primary-container text-white font-bold uppercase tracking-[0.2em] py-6 glow-hover clip-corner transition-all text-lg shadow-2xl">
+              SEND TRANSMISSION
+            </button>
+          </form>
+        </div>
+
+        <div class="mt-12 grid grid-cols-2 gap-6">
+          <div class="stone-slab p-6 text-center">
+            <span class="material-symbols-outlined text-red-600 mb-3 text-3xl">location_on</span>
+            <p class="text-[10px] uppercase text-neutral-500 tracking-widest mb-1">FORGE SECTOR</p>
+            <p class="text-sm font-bold text-white tracking-tighter uppercase">TERRA-IV CENTRAL</p>
+          </div>
+          <div class="stone-slab p-6 text-center">
+            <span class="material-symbols-outlined text-red-600 mb-3 text-3xl">schedule</span>
+            <p class="text-[10px] uppercase text-neutral-500 tracking-widest mb-1">OPS HOURS</p>
+            <p class="text-sm font-bold text-white tracking-tighter uppercase">0800 - 2000 STU</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="w-full border-t-4 border-neutral-800 bg-black border-t-2 border-red-900/30">
+    <div class="w-full py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto">
+      <div class="flex flex-col items-center md:items-start gap-4">
+        <img alt="COR-MAG 3D Logo" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9"/>
+        <p class="font-['Space_Grotesk'] text-[10px] font-medium tracking-[0.3em] uppercase text-neutral-600">© 40,000 COR-MAG 3D</p>
+      </div>
+      <div class="flex gap-8">
+        <span class="material-symbols-outlined text-neutral-500 hover:text-red-600 cursor-pointer text-2xl">share</span>
+        <span class="material-symbols-outlined text-neutral-500 hover:text-red-600 cursor-pointer text-2xl">mail</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
