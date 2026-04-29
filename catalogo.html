@@ -81,15 +81,15 @@
         <input type="checkbox" id="sidebar-toggle" class="hidden peer/sidebar">
         
         <a href="index.html">
-          <img alt="COR-MAG 3D" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9">
+          <img alt="COR-MAG 3D" class="h-10 object-contain" src="images/cor-mag3d.png">
         </a>
       </div>
       
       <nav class="hidden md:flex gap-10">
-        <a class="nav-link nav-link-inactive" href="index.html">Home</a>
-        <a class="nav-link nav-link-active" href="catalogo.html">Catalog</a>
-        <a class="nav-link nav-link-inactive" href="#">Commission</a>
-        <a class="nav-link nav-link-inactive" href="#">Intel</a>
+        <a class="nav-link nav-link-inactive" href="index.html">Inicio</a>
+        <a class="nav-link nav-link-active" href="catalogo.html">Catálogo</a>
+        <a class="nav-link nav-link-inactive" href="pintura.html">Encargos</a>
+        <a class="nav-link nav-link-inactive" href="contacto.html">Información</a>
       </nav>
 
       <div class="flex items-center gap-4">
@@ -101,31 +101,31 @@
   <!-- Side Navigation Drawer -->
   <aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-80 border-r-4 border-neutral-800 bg-neutral-900 shadow-2xl transition-transform -translate-x-full peer-checked/sidebar:translate-x-0 pt-20">
     <div class="px-6 py-8 flex justify-between items-center">
-      <h2 class="font-['Space_Grotesk'] font-bold uppercase text-red-700 text-xl tracking-tighter">COMMAND CONSOLE</h2>
+      <h2 class="font-['Space_Grotesk'] font-bold uppercase text-red-700 text-xl tracking-tighter">CONSOLA DE MANDO</h2>
       <label for="sidebar-toggle" class="cursor-pointer lg:hidden">
         <span class="material-symbols-outlined text-neutral-500">close</span>
       </label>
     </div>
     <nav class="flex-1 flex flex-col font-['Space_Grotesk'] font-bold uppercase overflow-y-auto">
       <a class="text-neutral-500 px-6 py-5 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="index.html">
-        <span class="material-symbols-outlined">home</span> Home
+        <span class="material-symbols-outlined">home</span> Inicio
       </a>
       <a class="bg-red-950/20 text-red-500 border-l-4 border-red-600 px-6 py-5 flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="catalogo.html">
-        <span class="material-symbols-outlined">grid_view</span> Catalog
+        <span class="material-symbols-outlined">grid_view</span> Catálogo
       </a>
-      <a class="text-neutral-500 px-6 py-5 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="#">
-        <span class="material-symbols-outlined">brush</span> Commission
+      <a class="text-neutral-500 px-6 py-5 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="pintura.html">
+        <span class="material-symbols-outlined">brush</span> Encargos
       </a>
-      <a class="text-neutral-500 px-6 py-5 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="#">
-        <span class="material-symbols-outlined">help</span> Intel
+      <a class="text-neutral-500 px-6 py-5 hover:bg-neutral-800 hover:text-red-400 transition-all flex items-center gap-4 active:scale-95 border-b border-neutral-800" href="contacto.html">
+        <span class="material-symbols-outlined">help</span> Información
       </a>
       <!-- Faction Filters in Sidebar -->
       <div class="mt-8 px-6">
-        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest block mb-4">Faction Registry</span>
+        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest block mb-4">Registro de Facciones</span>
         <div class="flex flex-col gap-2">
-           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Space Marines</button>
-           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Chaos Legions</button>
-           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Xenos Threat</button>
+           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Marines Espaciales</button>
+           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Legiones del Caos</button>
+           <button class="text-left text-xs text-neutral-400 hover:text-white py-2 border-b border-neutral-800">Amenaza Xenos</button>
         </div>
       </div>
     </nav>
@@ -135,7 +135,7 @@
   <main class="transition-all duration-300 pt-32 px-6 md:px-12 pb-24 max-w-screen-2xl mx-auto min-h-screen relative">
     <!-- Watermark Background -->
     <div class="fixed inset-0 z-[-1] pointer-events-none opacity-5 flex items-center justify-center">
-       <img src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9" 
+       <img src="images/cor-mag3d.png" 
             class="w-full md:w-1/2 grayscale invert" alt="Watermark">
     </div>
 
@@ -143,13 +143,13 @@
     <header class="mb-12">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div>
-          <h1 class="text-4xl md:text-6xl font-headline-lg text-on-surface uppercase tracking-widest mb-4">Registry</h1>
-          <p class="text-on-surface-variant font-body-md max-w-2xl text-lg">High-fidelity 3D resin prints for wargaming. Forged for eternal conflict.</p>
+          <h1 class="text-4xl md:text-6xl font-headline-lg text-on-surface uppercase tracking-widest mb-4">Catálogo</h1>
+          <p class="text-on-surface-variant font-body-md max-w-2xl text-lg">Impresiones en resina 3D de alta fidelidad para wargames. Forjadas para el conflicto eterno.</p>
         </div>
         <div class="w-full md:w-auto">
           <div class="machined-plate bg-surface-container-low border border-neutral-700 px-6 py-3 flex items-center gap-4">
             <span class="material-symbols-outlined text-neutral-500">search</span>
-            <input class="bg-transparent border-none focus:ring-0 text-sm font-['Space_Grotesk'] text-on-surface placeholder:text-neutral-600 uppercase w-full" placeholder="SEARCH ASSETS..." type="text">
+            <input class="bg-transparent border-none focus:ring-0 text-sm font-['Space_Grotesk'] text-on-surface placeholder:text-neutral-600 uppercase w-full" placeholder="BUSCAR ACTIVOS..." type="text">
           </div>
         </div>
       </div>
@@ -158,28 +158,28 @@
     <!-- Filters Row -->
     <section class="mb-12 flex flex-wrap items-center gap-8 p-8 stone-slab">
       <div class="flex flex-col gap-3 min-w-[200px]">
-        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Faction</span>
+        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Facción</span>
         <select class="bg-neutral-900 border border-neutral-700 text-xs font-['Space_Grotesk'] uppercase px-4 py-3 focus:border-red-600 focus:ring-1 focus:ring-red-900 outline-none">
-          <option>All Factions</option>
-          <option>Space Marines</option>
-          <option>Chaos Legions</option>
-          <option>Xenos Threat</option>
+          <option>Todas las Facciones</option>
+          <option>Marines Espaciales</option>
+          <option>Legiones del Caos</option>
+          <option>Amenaza Xenos</option>
         </select>
       </div>
       <div class="flex flex-col gap-3 min-w-[200px]">
-        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Classification</span>
+        <span class="text-[10px] font-bold text-red-700 uppercase tracking-widest">Clasificación</span>
         <select class="bg-neutral-900 border border-neutral-700 text-xs font-['Space_Grotesk'] uppercase px-4 py-3 focus:border-red-600 focus:ring-1 focus:ring-red-900 outline-none">
-          <option>All Units</option>
-          <option>Troops</option>
-          <option>Elites</option>
-          <option>Heavy Support</option>
+          <option>Todas las Unidades</option>
+          <option>Tropas</option>
+          <option>Élites</option>
+          <option>Apoyo Pesado</option>
         </select>
       </div>
       <div class="flex items-center gap-4 mt-auto">
-        <button class="px-6 py-3 border border-red-900 text-xs font-bold uppercase bg-red-950/30 text-red-500 hover:bg-red-800 hover:text-white transition-all">In Stock</button>
-        <button class="px-6 py-3 border border-neutral-800 text-xs font-bold uppercase hover:bg-neutral-800 transition-all text-neutral-500">Backorder</button>
+        <button class="px-6 py-3 border border-red-900 text-xs font-bold uppercase bg-red-950/30 text-red-500 hover:bg-red-800 hover:text-white transition-all">En Stock</button>
+        <button class="px-6 py-3 border border-neutral-800 text-xs font-bold uppercase hover:bg-neutral-800 transition-all text-neutral-500">Por Encargo</button>
       </div>
-      <div class="md:ml-auto text-xs font-['Space_Grotesk'] text-neutral-500 uppercase">Registry Count: 48 units</div>
+      <div class="md:ml-auto text-xs font-['Space_Grotesk'] text-neutral-500 uppercase">Total en Registro: 48 unidades</div>
     </section>
 
     <!-- Product Grid -->
@@ -190,7 +190,7 @@
           <div class="heavy-frame bg-black aspect-square overflow-hidden mb-6">
             <img alt="Space Marine" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFgvSuSVoL8n6mBUSeLRdJPmmuOXxTcrrOaxJfL1MlANhv8pNzS3g2KK6jqz_Pc8ShW0fFwwE21w5OsTh-hn6rNDHP0_IkuWwXMHucayrytKSbeOEc6bJOgYH-K6_p1OVIWpNSpWA90UlGqQxhpUEcWdpTZ6Si8H1VQDXZ3WD0YN9V5I8SebfXQ3ITu2dbi0W4rj2T5cFjiRmiG4h6hqWg1a_QMBHTsDiNwo_K7kVqL3cXXE9fAmvNANu9L8uE0l7xBvHJ5wIVbKI">
             <div class="absolute top-4 right-4">
-              <span class="bg-secondary/10 text-secondary border border-secondary/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">Gold Tier</span>
+              <span class="bg-secondary/10 text-secondary border border-secondary/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm">Nivel Oro</span>
             </div>
           </div>
           <div class="flex justify-between items-start mb-2">
@@ -199,7 +199,7 @@
           </div>
           <p class="text-[10px] text-neutral-500 uppercase tracking-[0.2em] mb-8">Space Marines</p>
           <button class="w-full machined-plate py-4 text-xs font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_15px_rgba(158,0,0,0.6)] transition-all clip-corner">
-            Initiate Purchase
+            Iniciar Compra
           </button>
         </div>
       </article>
@@ -215,7 +215,7 @@
           </div>
           <p class="text-[10px] text-neutral-500 uppercase tracking-[0.2em] mb-8">Chaos Legions</p>
           <button class="w-full machined-plate py-4 text-xs font-bold text-white uppercase tracking-widest hover:drop-shadow-[0_0_15px_rgba(158,0,0,0.6)] transition-all clip-corner">
-            Initiate Purchase
+            Iniciar Compra
           </button>
         </div>
       </article>
@@ -240,7 +240,7 @@
   <footer class="w-full border-t-4 border-neutral-800 bg-black border-t-2 border-red-900/30 mt-20">
     <div class="w-full py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto">
       <div class="flex flex-col items-center md:items-start gap-4">
-        <img alt="COR-MAG 3D" class="h-10 object-contain grayscale brightness-75" src="https://lh3.googleusercontent.com/aida/ADBb0uiutMXJHZW6IGDE_zr2B09-qk01r2OO8NlBbOq1CJe9gRiR-IltV9aitPQOK04fPkgf8bDWnheMq7I9kVvbdsOOgXlJuZiOGvH7DRU00gcC-Dkh52wrh8fdzHAfqmGzhkQnfHSAIy9kkme-rZfRnYrkbtb4AWYG_qezC34K9mkOSDD77vVqSc_0T8OQyhHwJI5FKQeyPHG_dVPde7SSJhc1qPL-YOXi3HtcB2Hht21RkMv_WeRHnN86RggMGD3XkpLZmtgE4pm9">
+        <img alt="COR-MAG 3D" class="h-10 object-contain grayscale brightness-75" src="images/cor-mag3d.png">
         <p class="font-['Space_Grotesk'] text-[10px] font-medium tracking-[0.3em] uppercase text-neutral-600">© 40,000 COR-MAG 3D</p>
       </div>
       <div class="flex gap-8">
@@ -251,3 +251,4 @@
   </footer>
 </body>
 </html>
+
